@@ -2,17 +2,11 @@ public class EmployeeWage {
         public static void main(String[] args){
         // Constraints
         int Is_Full_Time = 1;
-	int EMP_RATE_PER_HOUR = 20;
-	// Variables
-	int empHrs = 0;
-	int empWage = 0;
                 //Computation
                 double empCheck = Math.floor(Math.random() * 10) %2;
                 if (empCheck == Is_Full_Time)
-                        empHrs = 8;
+                        System.out.println("Employee Present");
                 else
-                        empHrs = 0;
-		empWage = empHrs * EMP_RATE_PER_HOUR;
-		System.out.println("EMP Wage: " + empWage);
+                        System.out.println("Employee Abscent");
         }
 }
